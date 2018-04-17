@@ -25,10 +25,35 @@
     <author email="dev@cordova.apache.org" href="http://cordova.io">
         Apache Cordova Team
     </author>
-    <content src="index.html" />
+    <content src="https://fantasy.iplt20.com/tournament" />
     <!-- Whitelist configuration. Refer to https://cordova.apache.org/docs/en/edge/guide_appdev_whitelist_index.md.html -->
     <plugin name="cordova-plugin-whitelist" spec="1" />
     <access origin="*" />
+    <!-- Wildcards are allowed for the protocol, as a prefix
+     to the host, or as a suffix to the path -->
+    <allow-navigation href="*://*.iplt20.com/*" />
+    <!-- A wildcard can be used to whitelist the entire network,
+     over HTTP and HTTPS.
+     *NOT RECOMMENDED* -->
+    <allow-navigation href="*" />
+ 
+ !-- Allow images, xhrs, etc. to google.com -->
+<access origin="http://fantasy.iplt20.com/tournament" />
+<access origin="https://fantasy.iplt20.com/tournament" />
+
+<!-- Access to all the subdomains on google.com -->
+<access origin="http://*.iplt20.com" />
+
+<!-- Enable requests to content: URLs -->
+<access origin="content:///*" />
+
+<!-- Don't block any requests -->
+<access origin="*" />
+
+    <!-- The above is equivalent to these three declarations -->
+    <allow-navigation href="http://*/*" />
+    <allow-navigation href="https://*/*" />
+    <allow-navigation href="data:*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />
