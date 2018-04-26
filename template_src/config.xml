@@ -18,31 +18,31 @@
  under the License.
 -->
 <widget id="io.cordova.hellocordova" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>IPL Fantasy</name>
+    <name>Bovada</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
     </description>
     <author email="dev@cordova.apache.org" href="http://cordova.io">
         Apache Cordova Team
     </author>
-    <content src="https://fantasy.iplt20.com/tournament" />
+    <content src="https://sports.bovada.lv" />
     <!-- Whitelist configuration. Refer to https://cordova.apache.org/docs/en/edge/guide_appdev_whitelist_index.md.html -->
     <plugin name="cordova-plugin-whitelist" spec="1" />
     <access origin="*" />
     <!-- Wildcards are allowed for the protocol, as a prefix
      to the host, or as a suffix to the path -->
-    <allow-navigation href="*://*.iplt20.com/*" />
+    <allow-navigation href="*://*.bovada.lv/*" />
     <!-- A wildcard can be used to whitelist the entire network,
      over HTTP and HTTPS.
      *NOT RECOMMENDED* -->
     <allow-navigation href="*" />
  
  !-- Allow images, xhrs, etc. to google.com -->
-<access origin="http://fantasy.iplt20.com/tournament" />
-<access origin="https://fantasy.iplt20.com/tournament" />
+<access origin="http://sports.bovada.lv" />
+<access origin="https://sports.bovada.lv" />
 
 <!-- Access to all the subdomains on google.com -->
-<access origin="http://*.iplt20.com" />
+<access origin="http://*.bovada.lv" />
 
 <!-- Enable requests to content: URLs -->
 <access origin="content:///*" />
